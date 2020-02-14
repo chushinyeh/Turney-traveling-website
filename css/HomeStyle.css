@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFBFD;
+    width: 100%;
+    /* height: 100vh; */
+    color: #212121;
+    transition: all .3s;
+}
+a {
+    text-decoration: none;
+}
+.flexbox {
+    display: flex;
+}
+.margin-auto {
+    margin: auto;
+}
+
+
+/* --------------------Nav Start here---------------------------------- */
+.nav-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.logo, .logo-bottom {
+    width: 100px;
+}
+.padding  {
+    padding: 15px 0;
+    text-align: justify;
+    margin: auto;
+}
+.text-color {
+    color: #FAFBFD;
+}
+.link-hover {
+    transition: all .5s;
+    padding:  5px;
+    
+}
+.link-hover:hover {
+    color: #F7B733;
+    border-bottom: 2px solid #F7B733;
+    /* text-decoration: underline; */
+}
+/* ---------------------------Banner Start here-----------------------  */
+.banner-container {
+    position: relative;
+}
+.banner {
+    width: 100%;
+    height: 85vh;
+    background-image: url(../img/Home/singapore-4-f33a.jpg);
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FAFBFD;
+  font-size: 3em;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+.options-container {
+    position: absolute;
+    width: 60%;
+    height: 10vh;
+    bottom: -13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+.location-box, .type-activities-box {
+    width: 30%;
+    height: auto;
+    /* background-color: grey; */
+    border-right:1px solid grey ;
+    font-size: 1.2em;
+    color: #212121;
+    /* padding: 15px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: auto; */
+}
+.search-box {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid grey ;
+    font-size: 1.2em;
+    /* margin: auto; */
+}
+.placeholder, .camping {
+    width: 20px;
+    padding-right: 10px;
+    /* margin: auto; */
+}
+.search {
+    width: 20%;
+    padding: 10px;
+    margin: auto;
+    
+}
+.btn-box {
+    width: 30%;
+    height: auto;
+    background-color: #F7B733;
+    font-size: 1.2em;
+    color: #212121;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.activities-text, .location-text {
+    color: #212121;
+}
+.btn-go {
+    color: #FAFBFD;
+    font-size: 2em;
+    font-weight: bold;
+}
+/* -------------------------------- Event start here--------------------------- */
+.event-container {
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+}
+.event-title {
+    padding-top: 5%;
+    margin: 5% 0;
+}
+.event-card {
+    width: 60%;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+}
+.event-img-box {
+    width: 60%;
+    background-image: url(../img/Home/Singapore-Botanic-Gardens\ .jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5% 0 0 5%;
+}
+.event-text-box {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 40%;
+    /* margin: 0 auto; */
+}
+.date {
+    color: #999999;
+}
+.headline {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: auto;
+    margin-top: 50%;
+    color: #212121;
+}
+.finding-more-box  {
+    text-align: center;
+    justify-content: center;
+}
+.finding-more-text {
+    color: #F7B733;
+}
+.finding-more-icon {
+    width: 30px;
+    padding-right: 5px;
+}
+/* --------------------------who are you coming with starts here------------------------------ */
+
+.type-container{
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+    margin-bottom: 0;
+}
+.type-icon-box {
+    justify-content: center;
+    margin-top: 50px;
+}
+.family-box, .couple-box, .friend-box, .school-box {
+    text-align: center;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.famliy-icon, .couple-icon, .friend-icon, .school-icon {
+    width: 50px;
+    cursor: pointer;
+}
+.famliy, .couple, .friend, .school {
+    padding: 0 5px;
+    margin: auto 15px;
+    color: #757576;
+    cursor: pointer;
+    transition: all .3s;
+}
+.gallery-container {
+    justify-content: center;
+    /* width: 100%; */
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 0;
+}
+.gallery-box-1, .gallery-box-2, .gallery-box-3 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.gallery-img-1 {
+    width: 70%;
+    height: 50vh;
+    background-image: url(../img/info_1/Gardens-by-the-Bay-Singapore-Floral-Fantasy-Dance-landscape-overview.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-img-text-1, .gallery-img-text-2, .gallery-img-text-3 {
+    width: 30%;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.gallery-headline {
+    color: #212121;
+}
+/* .modified {
+    padding-top: 10px;
+} */
+
+.gallery-img-2 {
+    width: 80%;
+    height: 30vh;
+    background-image: url(../img/Home/ChildrenGarden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery-img-3 {
+    width: 80%;
+    height: 30vh;
+    background-image: url(../img/Home/0f6fde412c0942e28835ad62d8f8dfbc_Majestic+Bay+-+Crispy+Prawns+in+Satay+Peanut+Sauce+\(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------------------footer starts here---------------------------- */
+.footer-container {
+    width: 100%;
+    background-color: #212121;
+    margin-top: 100px;
+}
+.top-footer-container {
+    width: 80%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.visit-box, .contact-box, .connect-box {
+    padding: 50px;
+    height: 30vh;
+    width: 15%;
+    border: 2px solid #FAFBFD;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-headline {
+    color: #FAFBFD;
+    font-weight: bold;
+    text-align: center;
+}
+.address, .contact-info, .btn-direction, .btn-submit, .btn-sing-up {
+    color: #FAFBFD;
+} 
+.btn-direction, .btn-submit, .btn-sing-up {
+    border: 1px solid #FAFBFD;
+    padding: 20px 10px;
+}
+.fb, .ig, .tw {
+    width: 50px;
+    margin: 0 auto;
+}
+.bottom-footer-container {
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.others-box {
+    justify-content: space-around;
+    padding: 15px 0;
+}
+.link-contact, .link-team, .link-policy {
+color: #FAFBFD;
+
+}
+.logo-bottom {
+    width: 150px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 30px 500px;
+    border-bottom: 1px solid #999999;
+}
+/* ----------------------------mobile nav starts here------------------------------------- */
+.mobile-nav {
+    display: none;
+}
+/* --------------------------------------------mediaQuery : tablet size---------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width:1024px){
+    .nav-container {
+        font-size: .8em;
+    }
+    .banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-text {
+        font-size: 2.15rem;
+        text-align: center;
+    }
+    .options-container{
+        width: 80%;
+    }
+    .location-text, .activities-text {
+        font-size: 1rem;
+    }
+    .type-activities-box {
+        width: 40%;  
+    }
+    .btn-box {
+        width: 18%;
+    }
+    .event-title, .type-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .event-card {
+        width: 80%;
+    }
+    .type-icon-box {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .family-box, .couple-box, .friend-box, .school-box {
+        margin: 0 15px; 
+    }
+    .school {
+        margin-right: 0;
+    }
+    .gallery-box-1, .gallery-box-2, .gallery-box-3 {
+        width: 90%
+    }
+    .gallery-img-1, .gallery-img-2, .gallery-img-3 {
+        width: 70%;
+        height: 20vh;
+    }
+    .gallery-img-text-1, .gallery-img-text-2, .gallery-img-text-3 {
+        padding-top: 20px;
+    }
+    .gallery-img-text-1 .finding-more-text, .gallery-img-text-2 .finding-more-text, .gallery-img-text-3 .finding-more-text {
+        font-size: .5rem;
+    }
+    .gallery-img-text-1 .finding-more-icon, .gallery-img-text-2 .finding-more-icon, .gallery-img-text-3 .finding-more-icon{
+        width: 20px;
+    }
+    .gallery-headline {
+        font-size:  1rem;;
+    }
+    .date {
+        font-size: .5rem;;
+    }
+    
+    .visit-box, .connect-box, .contact-box {
+        padding: 0 10px;
+        width: 30%;
+        margin: 0 10px;
+        margin-top: 30px;
+    }
+    .footer-headline {
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    .address, .contact-info, .btn-direction, .btn-submit, .btn-sing-up {
+        font-size: .5rem;
+    }
+    .fb, .ig, .tw {
+        width: 30px;
+    }
+    .logo-bottom {
+        padding: 30px 80px;
+    }
+}
+
+/* --------------------------------------------mediaQuery : phone  size---------------------------------------------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .nav-container, .banner-container, .footer-container, .type-icon-box {
+      display: none;
+  }
+   .mobile-nav {
+       display: flex;
+       width: 80%;
+       height: 10vh;
+       background-color: white;
+       box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+       justify-content: space-around;
+       align-items: center;
+       border-radius: 30px;
+       margin: 0 auto;
+       left: 10%;
+       margin-top: 85vh;
+       position: fixed;
+
+   }
+
+    .search-btn, .comments-btn, .review-btn {
+        width: 30px;
+    }
+
+    .user-account {
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/black-chimpanzee-smiling-50582.jpg);
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .event-title {
+        font-size: 1.2rem;
+    }
+    .event-card {
+        display: block;
+        width: 80%;
+    }
+    .event-img-box {
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px 10px 0 0;
+    }
+    .event-text-box {
+        width: 100%;
+        height: 20vh;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .date {
+        font-size: .8em;
+    }
+    .headline {
+        font-size:1em;
+        margin-top: 20px;
+        font-weight: bolder;
+    }
+    .finding-more-text {
+        font-size: .8em;
+    }
+    .type-title {
+        display: none;
+    }
+    .gallery-box-1, .gallery-box-2, .gallery-box-3 {
+        flex-direction: column;
+        height: 60vh;
+        margin-bottom: 40px;
+    }
+    .gallery-box-2 {
+        flex-direction: column-reverse;
+    }
+    .gallery-box-3 {
+        margin-bottom: 100px;
+    }
+    .gallery-img-1, .gallery-img-2, .gallery-img-3 {
+        width: 100%;
+        height: 40vh;
+    }
+    .gallery-img-text-1, .gallery-img-text-2, .gallery-img-text-3 {
+        width: 100%;
+        height: 20vh;
+        padding: 20px 0 ;
+        justify-content: space-around;
+    }
+    
+    .subtitle {
+        font-size: .8em;
+    }
+    .gallery-headline {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+   
+  }

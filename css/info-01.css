@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFBFD;
+    width: 100%;
+    color: #212121;
+    transition: all .3s;
+}
+a {
+    text-decoration: none;
+}
+.flexbox {
+    display: flex;
+}
+.margin-auto {
+    margin: auto;
+}
+.mobile-nav {
+    display: none;
+}
+.headline {
+    font-weight: bold;
+}
+/* --------------------Nav Start here---------------------------------- */
+.nav-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.logo, .logo-bottom {
+    width: 100px;
+}
+.padding  {
+    padding: 15px 0;
+    text-align: justify;
+    margin: auto;
+}
+.text-color {
+    color: #FAFBFD;
+}
+.link-hover {
+    transition: all .5s;
+    padding:  5px;
+    
+}
+.link-hover:hover {
+    color: #F7B733;
+    border-bottom: 2px solid #F7B733;
+    /* text-decoration: underline; */
+}
+/* ------------------------info-1-banner-------------------------- */
+.info-1-banner-container {
+    position: relative;
+    width: 100%;
+}
+.info-1-banner {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/info_1/image-menu-the-gardens-desktop-1670x940.jpg.renderimage.854.480.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ------------------------attractions section----------------------- */
+.attractions-container {
+    margin-top: 50px;
+    text-align: center;
+}
+.attractions-gallery {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery-card {
+    width: 40%;
+    height: 65vh;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.bg-img {
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 30px 0 0;
+}
+.gallery-img-1 {
+    background-image: url(../img/info_1/Gardens-by-the-Bay-Singapore-Floral-Fantasy-Dance-landscape-overview.jpg);
+}
+.gallery-img-2 {
+    background-image: url(../img/info_1/CloudForest.jpg);
+} 
+.gallery-img-3 {
+    background-image: url(../img/info_1/SupertreeGrove.jpg);
+}
+.gallery-img-4 {
+    background-image: url(../img/info_1/ArtSculptures.jpg);
+}
+.gallery-text-box {
+    margin: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.subtitle {
+    font-size: 1.7em;
+    color: #212121;
+}
+.content {
+    color: #6f6f6f;
+    padding: 15px 0;
+}
+.finding-more-box  {
+    text-align: center;
+    justify-content: center;
+}
+.finding-more-text {
+    color: #F7B733;
+}
+.finding-more-icon {
+    width: 30px;
+    padding-right: 5px;
+}
+/* --------------------------options section------------------- */
+.option-container {
+    margin-top: 80px;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.top-option-box, .bottom-option-box {
+    width: 90%;
+    margin: 0 auto;
+}
+.bottom-option-box {
+    margin-top: 30px;
+}
+.left-colum {
+    width: 45%;
+    margin-right: 30px;
+}
+.right-colum {
+    width: 50%;
+}
+.more-event-box {
+    margin-top: 20px;
+}
+.restaurant-box {
+    width: 60%;
+    height: 30vh;
+}
+.street-food-box {
+    width: 35%;
+    height: 30vh;
+    margin-left: 30px;
+}
+.hotel-img {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/info_1/85960609.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(2);
+}
+.theme-park-img {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/info_1/USS-BrandKV-1366x666.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1);
+}
+.more-event-img {
+    width: 100%;
+    height: 38vh;
+    background-image: url(../img/info_1/program-brochure-1679x940.jpg.renderimage.1670.940.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1);
+}
+.restaurant-img {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/info_1/Live-Crab-Sauteed-Singapore-Chilli-Sauce-900x600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1);
+}
+.street-food-img {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../img/info_1/images.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(1);
+}
+.cover {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+}
+.hotel-cover {
+    width: 41%;
+    height: 80vh;
+    top: 0;
+}
+.theme-park-cover {
+    width: 45%;
+    height: 40vh;
+    top: 0;
+}
+.event-cover {
+    width: 45%;
+    height: 38vh;
+    top: 37%;
+}
+.restaurant-cover {
+    width: 54%;
+    height: 30vh;
+    bottom: 0;
+}
+.street-food-cover {
+    width: 31.5%;
+    height: 30vh;
+    bottom: 0;
+}
+.words {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+}
+.hotel-word {
+    top: 36%;
+    left: 23%;
+    transform: translate(-36%, -23%);
+}
+.park-word {
+    top: 17%;
+    right: 7%;
+    transform: translate(-17%, -7%);
+}
+.event-word {
+    bottom: 44%;
+    right: 11%;
+    transform: translate(-44%, -11%);
+}
+.restaurant-word {
+    bottom: 10%;
+    left: 22%;
+    transform: translate(-10%, -22%);
+}
+.food-word {
+    bottom: 10%;
+    right: 5%;
+    transform: translate(-10%, -5%);
+}
+/* ------------------------------------footer starts here------------------------------ */
+.footer-container {
+    width: 100%;
+    background-color: #212121;
+    margin-top: 100px;
+}
+.top-footer-container {
+    width: 80%;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.visit-box, .contact-box, .connect-box {
+    height: 30vh;
+    border: 2px solid #FAFBFD;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+    width: 30%;
+    margin: 0 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+.footer-headline {
+    color: #FAFBFD;
+    font-weight: bold;
+    text-align: center;
+    font-size: .8rem;
+
+}
+.address, .contact-info, .btn-direction, .btn-submit, .btn-sing-up {
+    color: #FAFBFD;
+    font-size: .5rem;
+} 
+.btn-direction, .btn-submit, .btn-sing-up {
+    border: 1px solid #FAFBFD;
+    padding: 20px 10px;
+}
+.fb, .ig, .tw {
+    margin: 0 auto;
+    width: 30px;
+}
+.bottom-footer-container {
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.others-box {
+    justify-content: space-around;
+    padding: 15px 0;
+}
+.link-contact, .link-team, .link-policy {
+color: #FAFBFD;
+
+}
+.logo-bottom {
+    width: 150px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 30px 80px;
+    border-bottom: 1px solid #999999;
+}
+/* ---------------------------------------------mediaQuery: phone size----------------------------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        height: 100vh;
+    }
+    .nav-container, .footer-container, .type-icon-box, .cover {
+        display: none;
+    }
+     .mobile-nav {
+         z-index: 3;
+         display: flex;
+         width: 80%;
+         height: 10vh;
+         background-color: white;
+         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+         justify-content: space-around;
+         align-items: center;
+         border-radius: 30px;
+         margin: 0 auto;
+         left: 10%;
+         margin-top: 90vh;
+         position: fixed;
+  
+     }
+     
+      .search-btn, .comments-btn, .review-btn {
+          width: 30px;
+      }
+  
+      .user-account {
+          width: 30px;
+          height: 30px;
+          background-image: url(../img/black-chimpanzee-smiling-50582.jpg);
+          border-radius: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .date {
+        font-size: .8em;
+    }
+    .headline {
+        font-size:1em;
+    }
+    .finding-more-text {
+        font-size: .8em;
+    }
+    .attractions-gallery  {
+        display: block;
+    }
+    .gallery-card {
+        width: 80%;
+    }
+    .top-option-box, .bottom-option-box {
+        display: block;
+    }
+    .left-colum, .right-colum {
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .hotel-img, .theme-park-img, .more-event-img, .restaurant-img, .street-food-img {
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        margin-bottom: 25px;
+        filter: brightness(50%);
+    }
+    .restaurant-box, .street-food-box {
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .words {
+        font-size: .85em;
+    }
+    .hotel-word {
+        top: 10%;
+        left: 45%;
+    }
+    .event-word {
+        top: 50%;
+        left: 53%;
+    }
+    .park-word {
+        top: 30%;
+        left: 38%;
+        
+    }
+    .restaurant-word {
+        bottom: 29%;
+        left: 34%;
+    }
+    .food-word {
+        bottom: 8%;
+        left: 37%;
+    }
+}
