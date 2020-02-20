@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -19,17 +20,19 @@ a {
 .margin-auto {
     margin: auto;
 }
-
-
+ul, li {
+    list-style: none;
+}
 /* --------------------Nav Start here---------------------------------- */
-.nav-container {
-    display: flex;
+
+.nav {
     background-color: rgba(0, 0, 0, .7);
-    justify-content: space-around;
+   justify-content: center;
     position: fixed;
     width: 100%;
     z-index: 2;
 }
+
 .logo, .logo-bottom {
     width: 100px;
 }
@@ -102,12 +105,12 @@ a {
     /* margin: auto; */
 }
 .placeholder, .camping {
-    width: 20px;
+    width: 15%;
     padding-right: 10px;
     /* margin: auto; */
 }
 .search {
-    width: 20%;
+    width: 40%;
     padding: 10px;
     margin: auto;
     
@@ -173,7 +176,7 @@ a {
     font-weight: bold;
     font-size: 1.8em;
     margin: auto;
-    margin-top: 50%;
+    /* margin-top: 50%; */
     color: #212121;
 }
 .finding-more-box  {
@@ -422,8 +425,14 @@ color: #FAFBFD;
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .nav-container, .banner-container, .footer-container, .type-icon-box {
+    .footer-container, .type-icon-box, .options-container {
       display: none;
+  }
+  body {
+      height: 100vh;
+  }
+  .event-container {
+      margin-top: 10%;
   }
    .mobile-nav {
        display: flex;
@@ -436,13 +445,13 @@ color: #FAFBFD;
        border-radius: 30px;
        margin: 0 auto;
        left: 10%;
-       margin-top: 85vh;
+       margin-top: 90vh;
        position: fixed;
 
    }
 
     .search-btn, .comments-btn, .review-btn {
-        width: 30px;
+        width: 25px;
     }
 
     .user-account {
@@ -454,8 +463,18 @@ color: #FAFBFD;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .banner {
+        background-position: 67% 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(.7);
+    }
+    .banner-text {
+        font-size: 1.8em;
+        width: 58%;
+    }
     .event-title {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .event-card {
         display: block;
@@ -507,13 +526,93 @@ color: #FAFBFD;
         padding: 20px 0 ;
         justify-content: space-around;
     }
-    
     .subtitle {
         font-size: .8em;
     }
     .gallery-headline {
-        font-size: 1.2em;
+        font-size: 1.8em;
         font-weight: bold;
     }
-   
+    .logo {
+        display: none;
+    }
+    .menu-box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* --------------------------------------mobile nav------------------------------------ */
+
+    
+    .hamburicon {
+        width: 20px;
+        height: 3px;
+        background: #F7B733;
+        position: fixed;
+        top: 5%;
+        right: 3%;
+        transform: translate(-47%, -10%);
+        transition: all .5s;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        z-index: 2;
+    }
+    .hamburicon::before, .hamburicon::after {
+        content: '';
+        position: fixed;
+        width: 20px;
+        height: 3px;
+        background: #F7B733;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: all .5s;
+        z-index: 3;
+    }
+    .hamburicon::before {
+        top:-10px;
+    }
+    .hamburicon::after {
+        top:10px;
+    }
+    .nav-bar.active .hamburicon{
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        z-index: 3;
+    }
+    .nav-bar.active .hamburicon::before{
+        transform: rotate(45deg);
+        top: 0;
+        /* z-index: 3; */
+    }
+    .nav-bar.active .hamburicon::after{
+        transform: rotate(135deg);
+        top: 0;
+        /* z-index: 3; */
+    }
+    .sidebar {
+        position: fixed;
+        top: -1000px;
+        right: 0px;
+        width: 100%;
+        height: 45vh;
+        transition: all .5s;
+        padding: 20px;
+        text-align: center;
+        background: rgba(0, 0, 0, .8);
+        z-index: 1;
+    }
+    .sidebar.active {
+        top: 0;
+        /* z-index: 1; */
+    }
+    
+      
+
+
+
+
+
+
+
+
+
+
   }

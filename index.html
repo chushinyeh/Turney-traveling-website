@@ -14,29 +14,37 @@
 </head>
 <body>
     <div class="home-container">
-        <div class="nav-container">
-            <div class="home padding"><a class="text-color link-hover" href="">HOME</a></div>
-            <div class="attractions padding"><a class="text-color link-hover" href="info-01.html">ATTRACTIONS</a></div>
-            <div class="events padding"><a  class="text-color link-hover"href="">EVENTS</a></div>
-            <div class="logo padding"><a href=""><img class="logo" src="img/logo.svg"></a></div>
-            <div class="paln padding"><a class="text-color link-hover" href="">PLAN YOUR VISIT</a></div>
-            <div class="dining padding"><a class="text-color link-hover" href="">DINING</a></div>
-            <div class="hotel padding"><a class="text-color link-hover" href="">HOLETS</a></div>
-        </div>
-        <div class="mobile-nav">
-            <div class="search-box">
+        <header class="nav-container">
+            <div class="nav-bar">
+                <div class="hamburicon"></div>
+                <div class="bg"></div>
+            </div>
+            <nav class="nav sidebar" role="navigation">
+                <ul class="flexbox menu-box menu">
+                    <li class="home padding"><a class="text-color link-hover nav-item" href="#">HOME</a></li>
+                    <li class="attractions padding"><a class="text-color link-hover nav-item" href="html/info-01.html">ATTRACTIONS</a></li>
+                    <li class="events padding"><a class="text-color link-hover nav-item" href="#">EVENTS</a></li>
+                    <li class="logo padding"><a href="#"><img class="logo" src="img/logo.svg"></a></li>
+                    <li class="paln padding"><a class="text-color link-hover nav-item" href="#">PLAN YOUR VISIT</a></li>
+                    <li class="dining padding"><a class="text-color link-hover nav-item" href="#">DINING</a></li>
+                    <li class="hotel padding"><a class="text-color link-hover nav-item" href="#">HOLETS</a></li>
+                  </ul>
+            </nav>
+        </header>
+         <div class="mobile-nav"> 
+            <div class="mobile-search-box">
                 <a href="">
                     <img class="search-btn" src="img/icons/svg/007-search.svg">
                 </a>
             </div>
             <div class="comments-box">
                 <a href="">
-                    <img class="comments-btn" src="img/icons/svg/002-edit.svg">
+                    <img class="comments-btn" src="img/icons/svg/005-placeholder.svg">
                 </a>
             </div>
             <div class="review-box">
                 <a href="">
-                    <img class="review-btn" src="img/icons/svg/001-comment.svg">
+                    <img class="review-btn" src="img/icons/svg/006-camping.svg">
                 </a>
             </div>
             <div class="user-account-box">
@@ -46,7 +54,8 @@
             </div>
         </div>
         <div class="banner-container">
-            <div class="banner">
+            <div class="banner-box">
+                <div class="banner"></div>
                 <div class="banner-text">Start Your Adventure in Singapore</div>
             </div>
             <div class="options-container flexbox">
@@ -77,13 +86,13 @@
             <div class="event-card flexbox">
                 
                     <div class="event-img-box">
-                        <!-- <img class="event-img" src="../img/Home/Singapore-Botanic-Gardens .jpg"> -->
+                        
                     </div>
-                <a href="info-01.html">
+                <a href="html/info-01.html">
                     <div class="event-text-box flexbox">
                         <div class="date">Feature date: 29 Jan 2020</div>
                         <h3 class="headline">WHAT'S BLOOMING <br> AT GARDEN BY THE BAY</h3>
-                        <a class="finding-more-box flexbox" href="info-01.html">
+                        <a class="finding-more-box flexbox" href="html/info-01.html">
                             <img class="finding-more-icon" src="img/icons/svg/next.svg">
                             <span class="finding-more-text">Finding Out More</span>
                         </a> 
@@ -198,15 +207,24 @@
                 
 
             </div>
-        </div>
+        </div> 
+        
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+            $(".nav-bar").click(function(){
+                $(".nav-bar, .sidebar, .downsidebar").toggleClass('active');
+            });
+
+        </script>
 
 
 
 
 
 
-
-    </div>
+    
 
     
 

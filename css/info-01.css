@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -24,9 +25,11 @@ a {
 .headline {
     font-weight: bold;
 }
+ul, li {
+    list-style: none;
+} 
 /* --------------------Nav Start here---------------------------------- */
-.nav-container {
-    display: flex;
+.nav {
     background-color: rgba(0, 0, 0, .7);
     justify-content: space-around;
     position: fixed;
@@ -54,6 +57,9 @@ a {
     border-bottom: 2px solid #F7B733;
     /* text-decoration: underline; */
 }
+.nav-item {
+    font-size: .8em;
+}
 /* ------------------------info-1-banner-------------------------- */
 .info-1-banner-container {
     position: relative;
@@ -61,8 +67,8 @@ a {
 }
 .info-1-banner {
     width: 100%;
-    height: 50vh;
-    background-image: url(../img/info_1/image-menu-the-gardens-desktop-1670x940.jpg.renderimage.854.480.jpg);
+    height: 70vh;
+    background-image: url(../img/info_1/info_1_banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +85,7 @@ a {
 }
 .gallery-card {
     width: 40%;
-    height: 65vh;
+    height: 70vh;
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -111,6 +117,7 @@ a {
     margin: 20px;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 0;
 }
 .subtitle {
     font-size: 1.7em;
@@ -336,7 +343,7 @@ color: #FAFBFD;
     body {
         height: 100vh;
     }
-    .nav-container, .footer-container, .type-icon-box, .cover {
+     .footer-container, .type-icon-box, .cover {
         display: none;
     }
      .mobile-nav {
@@ -372,6 +379,9 @@ color: #FAFBFD;
       .date {
         font-size: .8em;
     }
+    .info-1-banner {
+        height: 60vh;
+    }
     .headline {
         font-size:1em;
     }
@@ -380,6 +390,9 @@ color: #FAFBFD;
     }
     .attractions-gallery  {
         display: block;
+    }
+    .attractions-headline {
+        font-size: 1.5rem;
     }
     .gallery-card {
         width: 80%;
@@ -429,5 +442,73 @@ color: #FAFBFD;
     .food-word {
         bottom: 8%;
         left: 37%;
+    }
+    /* --------------------------------------mobile nav------------------------------------ */
+    .menu-box {
+        flex-direction: column;
+    }
+    .logo {
+        display: none;
+    }
+    
+    .hamburicon {
+        width: 20px;
+        height: 3px;
+        background: #F7B733;
+        position: fixed;
+        top: 5%;
+        right: 3%;
+        transform: translate(-47%, -10%);
+        transition: all .5s;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        z-index: 2;
+    }
+    .hamburicon::before, .hamburicon::after {
+        content: '';
+        position: fixed;
+        width: 20px;
+        height: 3px;
+        background: #F7B733;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: all .5s;
+        z-index: 3;
+    }
+    .hamburicon::before {
+        top:-10px;
+    }
+    .hamburicon::after {
+        top:10px;
+    }
+    .nav-bar.active .hamburicon{
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        z-index: 3;
+    }
+    .nav-bar.active .hamburicon::before{
+        transform: rotate(45deg);
+        top: 0;
+        /* z-index: 3; */
+    }
+    .nav-bar.active .hamburicon::after{
+        transform: rotate(135deg);
+        top: 0;
+        /* z-index: 3; */
+    }
+    .sidebar {
+        position: fixed;
+        top: -1000px;
+        right: 0px;
+        width: 100%;
+        height: 50vh;
+        transition: all .5s;
+        padding: 30px 0;
+        text-align: center;
+        background: rgba(0, 0, 0, .8);
+        z-index: 1;
+    }
+    .sidebar.active {
+        top: 0;
+        /* z-index: 1; */
     }
 }
